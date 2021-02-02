@@ -1,0 +1,9 @@
+// Миксин для адаптации разных свойтв (padding, margin, font, line-height, width, height и возможно другие)
+// Ширина полотна макета (максимально возможная, относительно которой все будет работать)
+$maxWidth: 1920;
+// Свойтво, размер по макету, размер для 320
+@mixin adaptiv-value ($property, $startSize, $minSize) {
+	#{$property}: calc(#{$minSize + px} + #{$startSize - $minSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+}
+// Пример
+// @include adaptiv-value('padding', 20, 10);

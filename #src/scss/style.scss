@@ -1,0 +1,12 @@
+@import '_mixin-var';
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+h1,h2,h3,h4,h5,h6{color:inherit;font-size:inherit;font-weight:inherit;line-height:inherit;letter-spacing:inherit;}
+ul,li{list-style:none;}
+option,select,input,button,textarea{color:inherit;font-family:inherit;font-size:inherit;cursor:pointer;outline:none;border:none;background:transparent;}
+a{color:inherit;text-decoration:transparent;cursor:pointer;color:inherit;font-size:inherit;}
+html,body{height:100%;width:100%;font-size:18px;&.lock{overflow:hidden;}}
+._img{display:block;font-size:0;max-height:100%;max-width:100%;object-fit:cover;}
+
+
+@import '_slider';

@@ -1,0 +1,36 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.slider {
+  display: flex;
+  transition: all 0.7s ease 0s;
+  &__item {
+    min-width: 100%;
+    min-height: 100vh;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__prev {
+    position: absolute;
+    color: rgb(177, 5, 5);
+    top: 50%;
+    left: 0;
+    padding-left: 10px;
+  }
+  &__next {
+    position: absolute;
+    color: rgb(177, 5, 5);
+    top: 50%;
+    right: 0;
+    padding-right: 10px;
+  }
+}
